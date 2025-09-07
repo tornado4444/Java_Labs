@@ -14,7 +14,7 @@ public class Main {
         System.out.println("2) Значення f2 = " + f2);
 
         int min = 5; int max = 15;
-        i = (int) ((Math.random() * (max - min)) + min);
+        i = (int) ((Math.random() * (max - min + 1)) + min);
         System.out.println("3) Результат: " + i);
 
         b = (byte) i;
