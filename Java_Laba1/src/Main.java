@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] argv){
         // 1.1 Завдання
-        int i;
+        int i = 0;
         char c = 'A';
         boolean f1 = false;
         boolean f2 = true;
