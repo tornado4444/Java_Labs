@@ -76,7 +76,7 @@ public class Main {
         System.out.println("Відзеркальні координати (відносно осі X): ");
         for (int i = 0; i < pointCount; i++) {
             System.out.printf("Точка %d: (%.2f, %.2f)\n",
-                    i, points[i][0], points[i][1]);
+                    i + 1, points[i][0], points[i][1]);
         }
     }
 }
