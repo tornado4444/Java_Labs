@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Результат: ");
 
         for(int i = 0; i < 3; i++) {
-            int num = (int)(Math.random() * (double)(max - min + 1) + (double)min);
+            int num = (int)(Math.random() * (max - min + 1) + min);
             System.out.println(num);
             if (num == 0 || num > maxNumber) {
                 maxNumber = num;
@@ -44,11 +44,11 @@ public class Main {
         } while(num != 0);
 
         System.out.println("Кількість парних: " + posNum);
-        System.out.println("Середнє непарних: " + (oddCount > 0 ? (double)sum / (double)oddCount : (double)0.0F));
+        System.out.println("Середнє непарних: " + (oddCount > 0 ? sum / oddCount : 0));
         System.out.println("Завдання 2.2");
         System.out.print("Введіть текст: ");
-        Scanner scanner1 = new Scanner(System.in);
-        String text3 = scanner1.nextLine();
+        scanner.nextLine();
+        String text3 = scanner.nextLine();
         int count = 0;
         System.out.println("text3 = " + text3);
 
