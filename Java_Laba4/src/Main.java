@@ -46,7 +46,7 @@ class Triangle {
     public Triangle(Triangle t) {
         this.a = new Point(t.a);
         this.b = new Point(t.b);
-        
+        this.c = new Point(t.c);
     }
 
     public Point getA() { return new Point(a); }
