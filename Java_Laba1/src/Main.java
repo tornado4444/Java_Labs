@@ -27,7 +27,7 @@ public class Main {
 
         // 2.1 Завдання
         System.out.println("Завдання 2.1");
-        String emoji1 = "\uD83D\uDE80";
+        String emoji1 = "\uD83D\uDE8";
         String emoji2 = "\uD83D\uDE02";
         String emoji3 = "\uD83D\uDE08";
         System.out.println(emoji1);
