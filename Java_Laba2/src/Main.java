@@ -50,10 +50,10 @@ public class Main {
         scanner.nextLine();
         String text3 = scanner.nextLine();
         int count = 0;
-        System.out.println("text3 = " + text3);
+        System.out.println("text3 = " );
 
         for(int i = 0; i < text3.length(); ++i) {
-            if (text3.charAt(i) == '.') {
+            if (text3.charAt(i) ) {
                 count++;
             }
         }
