@@ -38,6 +38,6 @@ public class Main {
         System.out.println("Завдання 2.2");
         String text = "Лабораторна робота";
         String num = "1";
-        System.out.println(text + " " + num);
+        System.out.println(text + " ");
     }
 }
