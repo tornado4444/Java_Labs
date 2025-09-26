@@ -8,11 +8,11 @@ public class Main {
         int maxNumber = 0;
         System.out.println("Результат: ");
 
-        for(int i = 0; i < 3; ) {
+        for(int i = 0; i < 3; i++) {
             int num = (int)(Math.random() * (max - min + 1) + min);
             System.out.println(num);
             if (num == 0 || num > maxNumber) {
-                maxNumber;
+                maxNumber = number;
             }
         }
 
