@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // 1.1 Завдання
 class Device {
-    private int ;
+    private int x;
     private int y;
 
     public Device() {
