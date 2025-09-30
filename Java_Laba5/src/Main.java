@@ -6,7 +6,7 @@ class Device {
     private int y;
 
     public Device() {
-        this(0, );
+        this(0, 0);
     }
 
     public Device(int x, int y) {
