@@ -6,7 +6,9 @@ abstract class MeansComn {
     private boolean isAvailable;
     private double costPerUse;
 
-    
+    public MeansComn() {
+        this("", "", false, 0.0F);
+    }
 
     public MeansComn(String name, String provider, boolean isAvailable, double costPerUse) {
         setName(name);
