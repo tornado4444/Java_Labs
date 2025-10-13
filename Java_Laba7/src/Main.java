@@ -56,7 +56,59 @@ interface PassengerCapable {
     int getPassengerCapacity();
 }
 
+abstract class Machine extends Vehicle {
+    private int wheels;
 
+    public Machine() {
+        super();
+        this.wheels = 4;
+    }
+
+    public Machine(String name, int speed, int weight, int year, int wheels) {
+        super(name, speed, weight, year);
+        this.wheels = wheels;
+    }
+
+    public int getWheels() {return wheels;}
+    public void setWheels(int wheels) {this.wheels = wheels;}
+
+    @Override
+    public void move() {
+        System.out.println(getName() + " їде дорогою");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println(getName() + " зупиняється");
+    }
+}
+
+abstract class Railway extends Vehicle {
+    private String trackType;
+
+    public Railway() {
+        super();
+        this.trackType = "стандартна";
+    }
+
+    public Railway(String name, int speed, int weight, int year, String trackType) {
+        super(name, speed, weight, year);
+        this.trackType = trackType;
+    }
+
+    public String getTrackType() {return trackType;}
+    public void setTrackType(String trackType) {this.trackType = trackType;}
+
+    @Override
+    public void move() {
+        System.out.println(getName() + " їде рейками");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println(getName() + " гальмує на станції");
+    }
+}
 
 class Bus extends Machine implements PassengerCapable, CargoCatable {
     private int passengerCapacity;
