@@ -6,11 +6,11 @@ class NonCloneableObject {
     private String data;
 
     public NonCloneableObject(String data) {
-        this.data = da;
+        this.data = data;
     }
 
     public String getData() {
-        return data;
+        return data; // for the getters
     }
 
     public void setData(String data) {
