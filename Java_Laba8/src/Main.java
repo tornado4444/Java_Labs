@@ -6,7 +6,7 @@ class NonCloneableObject {
     private String data;
 
     public NonCloneableObject(String data) {
-        this.data = data;
+        this.data = da;
     }
 
     public String getData() {
