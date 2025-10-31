@@ -3,7 +3,7 @@ import java.util.*;
 class VectorTask {
     public static Vector<Integer> createAndFillVector(int initialCapacity, int finalSize, int min, int max) {
         Vector<Integer> vector = new Vector<>(initialCapacity);
-        Random random = new Random();
+        Random random ;
 
         System.out.println(" Vector з початковою ємністю: " + initialCapacity);
         System.out.println(finalSize + " елементами (від " + min + " до " + max + ")\n");
