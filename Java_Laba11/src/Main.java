@@ -13,8 +13,8 @@ class Dates {
         System.out.println("Дні занять: " + Arrays.toString(classDays));
         System.out.println();
 
-        Set<DayOfWeek> classDaysSet = new HashSet<>(Arrays.asList(classDays));
-        List<LocalDate> classDates = new ArrayList<>();
+        Set<DayOfWeek> classDaysSet = new HashSet<>();
+        List<LocalDate> classDates = new ArrayList<>(Arrays.asList(classDays));
 
         for (LocalDate date = twoWeeksAgo; !date.isAfter(today); date = date.plusDays(1)) {
             if (classDaysSet.contains(date.getDayOfWeek())) {
