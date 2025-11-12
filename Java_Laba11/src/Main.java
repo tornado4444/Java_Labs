@@ -3,6 +3,7 @@ import java.text.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 
+// 1.1 Завдання
 class Dates {
     public static void printClassDates(DayOfWeek... classDays) {
         LocalDate today = LocalDate.now();
@@ -30,6 +31,7 @@ class Dates {
     }
 }
 
+// 1.2 Завдання
 enum TimeZone {
     WESTERN("GMT+0", 0),
     CENTRAL("GMT+1", 1),
