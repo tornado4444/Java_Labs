@@ -89,8 +89,9 @@ class FileManager {
                 regex.append(".");
             } else if ("[](){}+^$|\\".indexOf(c) >= 0) {
                 regex.append("\\").append(c);
-            } else {
                 regex.append(c);
+            } else {
+                
             }
         }
         regex.append("$");
